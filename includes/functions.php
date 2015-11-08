@@ -6,6 +6,9 @@
 
 function napraviNoviAlbum($naziv) {
 
+	if (!file_exists($_SERVER['DOCUMENT_ROOT'] . '/slike/'))
+		mkdir($_SERVER['DOCUMENT_ROOT'] . '/slike/');
+
 	$purge = strtoupper(preg_replace('/\s+/', '-', $naziv));	// UPPERCASE naziv, zamjena razmaka sa crticom
 
 	// Vraca TRUE ako je direktorij(album) uspjesno kreiran, FALSE ako nije
