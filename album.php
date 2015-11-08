@@ -1,5 +1,8 @@
 <?php
-	include '/includes/header.php';
+
+$root = $_SERVER['DOCUMENT_ROOT'];
+
+	include $root . '/includes/header.php';
 
 	$req = $_SERVER['REQUEST_URI'];
 	$ime = ltrim($req, '/album');	// uzimamo ime albuma
@@ -12,6 +15,6 @@
     </div>
     
 <?php
-	include '/includes/prikazAlbuma.php';
+	include $root . '/includes/prikazAlbuma.php';
 
-include '/includes/footer.php';
+include $root . '/includes/footer.php';

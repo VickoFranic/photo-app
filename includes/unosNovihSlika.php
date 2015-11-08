@@ -9,7 +9,7 @@
 	</form>
 	<?php 
 		if(!empty($_FILES)) {
-			$dest = $_SERVER['DOCUMENT_ROOT'] . 'slike/' . $ime . "/";
+			$dest = $_SERVER['DOCUMENT_ROOT'] . '/slike/' . $ime . "/";
 
 			foreach ($_FILES['slike']['tmp_name'] as $key => $tmp) {
 				move_uploaded_file($tmp, $dest . $_FILES['slike']['name'][$key]);

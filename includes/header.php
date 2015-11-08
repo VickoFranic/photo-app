@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<title>Photo App</title>
 	<meta charset="utf-8">

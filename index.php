@@ -1,9 +1,12 @@
 <?php
+
+$root = $_SERVER['DOCUMENT_ROOT'];
+
 // Header
-include '/includes/header.php';
+include $root . '/includes/header.php';
 
 // Pomocne funkcije
-require_once '/includes/functions.php';
+require_once $root . '/includes/functions.php';
 
 ?>
     <div class="col-lg-12">
@@ -18,10 +21,10 @@ require_once '/includes/functions.php';
     }
     else {
         // Albumi postoje, prikazi ih
-        include '/includes/prikazSvihAlbuma.php';
+        include $root . '/includes/prikazSvihAlbuma.php';
     }
 
-    include '/includes/unosNazivaAlbuma.php'; // Button za kreiranje novog albuma  
+    include $root . '/includes/unosNazivaAlbuma.php'; // Button za kreiranje novog albuma  
 
 // Footer
-include '/includes/footer.php';
+include $root . '/includes/footer.php';

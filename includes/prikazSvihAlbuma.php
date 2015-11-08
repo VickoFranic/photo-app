@@ -5,7 +5,7 @@ foreach($slike as $s) {
 
 	<div class="col-lg-3 col-md-4 col-xs-6 thumb">
 		<a class="thumbnail" href="<?php echo 'album/' . str_replace('./slike/', '', $s); ?>">
-			<img class="img-responsive" src="/assets/placeholder.png" alt="">
+		<img class="img-responsive" src="http://www.pickeringtest.com/themes/shared/common/images/placeholder.png" />
 		</a>
 		<h2 class="text-center"><blockquote><?php echo substr($s, 8) ?></blockquote></h2>
 		<button id="delete" type="checkbox" name="album[]" value="<?php echo $s ?>" class="glyphicon glyphicon-trash"></button>

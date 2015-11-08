@@ -18,7 +18,7 @@ foreach ($slike as $s) {
 	</div>
 </div>
 <?php
-	include $_SERVER['DOCUMENT_ROOT'] . '/includes/unosNovihSlika.php';
+	include $root . '/includes/unosNovihSlika.php';
 ?>
 	<div class="col-md-6 text-right">
 		<a href="/" class="btn btn-info">Natrag</a>
