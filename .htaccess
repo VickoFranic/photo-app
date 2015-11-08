@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# izraz ^([^\.]+) znaci "pronadji mi sve od pocetka stringa(patha) pa 
+# do prve tocke" - znaci album.php ce postati 'album' i onda 1 parametar, odnosno ime albuma
+
+RewriteRule ^([^\.]+)$ album.php/$1
